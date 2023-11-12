@@ -6,8 +6,8 @@
       "type": "lldb",
       "request": "launch",
       "args": [],
-      "cwd": "/Users/louris/tech_learning/cplus_practice",
-      "program": "/Users/louris/tech_learning/cplus_practice/build/Debug/outDebug"
+      "cwd": "/Users/louris/tech_learning/cplus_practice/stage4/main",
+      "program": "/Users/louris/tech_learning/cplus_practice/stage4/main/build/Debug/outDebug"
     }
   ]
 }
