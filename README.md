@@ -32,6 +32,9 @@ bazel test --cxxopt=-std=c++14 --test_output=all //main:greet-test
 
 `clang-format`:
 ```
+Google
+```
+```
 { BasedOnStyle: WebKit, IndentWidth: 4, IndentCaseLabels: false, UseTab: Never, BreakBeforeBraces: Attach, AllowShortIfStatementsOnASingleLine: true, PointerAlignment: Left}
 ```
 

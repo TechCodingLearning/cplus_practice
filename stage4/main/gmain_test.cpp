@@ -2,37 +2,33 @@
 
 namespace my {
 namespace project {
-    namespace {
+namespace {
 
-        class FooTest : public testing::Test {
-        protected:
-            FooTest() {
-            }
+class FooTest : public testing::Test {
+ protected:
+  FooTest() {}
 
-            ~FooTest() override {
-            }
+  ~FooTest() override {}
 
-            void SetUp() override {
-            }
+  void SetUp() override {}
 
-            void TearDown() override {
-            }
-        };
+  void TearDown() override {}
+};
 
-        TEST_F(FooTest, MethodBarDoesAbc) {
-            const std::string str = "aaa";
-            EXPECT_EQ(str, "aaa");
-        }
-
-        TEST_F(FooTest, DoesXyz) {
-            const std::string str = "bbb";
-            EXPECT_EQ(str, "bbb");
-        }
-    }
-}
+TEST_F(FooTest, MethodBarDoesAbc) {
+  const std::string str = "aaa";
+  EXPECT_EQ(str, "aaa");
 }
 
-int main(int argc, char **argv) {
-    testing::InitGoogleTest(&argc, argv);
-    return RUN_ALL_TESTS();
+TEST_F(FooTest, DoesXyz) {
+  const std::string str = "bbb";
+  EXPECT_EQ(str, "bbb");
+}
+}  // namespace
+}  // namespace project
+}  // namespace my
+
+int main(int argc, char** argv) {
+  testing::InitGoogleTest(&argc, argv);
+  return RUN_ALL_TESTS();
 }
